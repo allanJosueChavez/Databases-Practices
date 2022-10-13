@@ -8,7 +8,7 @@ UPDATE matches SET goals_first_team = 3, goals_second_team = 0 WHERE id = 1;
 
 --Delete
 DELETE FROM teams WHERE name = 'Guatemala';
-DELETE FROM cards WHERE users_id = 1; --This is taking all cards of the user?
+DELETE FROM cards WHERE users_id = 6;
 
 --Unions
 SELECT name FROM users
@@ -38,6 +38,3 @@ SELECT * FROM users
 WHERE email LIKE '%gmail.com';
 SELECT * FROM matches
 WHERE name LIKE '%Brazil';
-
---What is the difference between INNER and OUTER JOIN?
---What is the difference between RIGHT and LEFT JOIN?
